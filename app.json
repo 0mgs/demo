@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/andreif/proj-template",
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "memcachier:dev",
+    "sentry:f1",
+    "newrelic:wayne",
+    "scheduler:standard"
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": {
+      "value": "app.settings"
+    },
+    "DJANGO_ALLOWED_HOSTS": {
+      "value": "proj-template.herokuapp.com",
+      "description": "FIXME: use the same app name as you have chosen above."
+    },
+    "DJANGO_SECRET_KEY": {
+      "generator": "secret"
+    },
+    "DJANGO_ADMIN_URL": {
+      "value": "",
+      "description": "Use a secret admin URL path, e.g. `mysecretdjangoadmin`"
+    },
+    "DISABLE_COLLECTSTATIC": {
+      "value": "",
+      "required": false,
+      "description": "Set any value to disable collecting static files."
+    }
+  },
+  "success_url": "/"
+}
